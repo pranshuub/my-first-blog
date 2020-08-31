@@ -1,0 +1,42 @@
+{% load static %}
+<html>
+    <head>
+        <title>CV</title>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div>
+            <strong>{{ cv.Name }}</strong>
+            <em>{{ cv.dob }}</em>
+            <em>{{ cv.email }}</em>
+            <em>{{ cv.phoneNo }}</em>
+        </div>
+
+        <div>
+            <h2>Profile</h2>
+            <p>{{ cv.profile }}</p>
+        </div>
+
+        <div>
+            <h2>Objective</h2>
+            <p>{{ cv.objective }}</p>
+        </div>
+
+        <div>
+            <h2>Skills And Achievements</h2>
+            <p>{{ cv.SkillsAndA }}</p>
+        </div>
+
+        <div>
+            <h2>Education</h2>
+            <p>{{ cv.education }}</p>
+        </div>
+
+        <div>
+            <h2>Work Experience</h2>
+            <p>{{ cv.workE }}</p>
+        </div>
+
+    </body>
+</html>
